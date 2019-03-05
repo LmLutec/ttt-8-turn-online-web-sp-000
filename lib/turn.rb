@@ -20,7 +20,7 @@ else
 end 
 end
 
-def move(board, index, token)
+def move(board, index, token = 'X')
   board[index]= token
 end 
 
