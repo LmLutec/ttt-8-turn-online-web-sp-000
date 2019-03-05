@@ -1,4 +1,4 @@
-require 'pry'
+
 def display_board(board)
  puts " #{board[0]} | #{board[1]} | #{board[2]} "
  puts "-----------"
@@ -28,7 +28,6 @@ def turn(board)
   puts "Please enter 1-9:"
   number = gets 
   index=input_to_index(number) 
-  binding.pry
   if valid_move?(board, index)
     true
   else 
