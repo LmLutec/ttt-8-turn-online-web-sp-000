@@ -29,7 +29,7 @@ def turn(board)
   number = gets 
   index=input_to_index(number) 
   if valid_move?(board, index)
-    move(board, index, token)
+    move(board, index)
   else 
     turn(board)
   end
